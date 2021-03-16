@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <title>Notifier</title>
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+            <div class="container-fluid">
+                <br><br><br><br><br><br>
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h1 class="h3 mb-0 text-gray-800 font-weight-bolder">Notifier</h1>
+                </div>
+                <br><br><br><br><br><br>
+                <div class="card o-hidden border-0 shadow-lg">
+                    <div class="card-body p-0">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <div class="p-5">
+<form class="user">
+    <div class="form-group row">
+        <div class="col-sm-6 mb-2 mb-sm-0">
+            <button type="button" class="btn btn-danger btn-user btn-block" data-toggle="modal" data-target="#confirmDelete">
+                NOTIFY ME
+            </button>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="confirmDelete" tabindex="-1" role="dialog" aria-labelledby="confirmDeleteLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmDeleteLabel">Select Method</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-lg-6 mb-4">
+                        <div class="row">
+                            <button type="button" onclick="ring()" class="btn col-lg-6 mb-4">
+                                <div class="card bg-primary text-white shadow">
+                                    <div class="card-body">
+                                        RING
+                                    </div>
+                                </div>
+                            </button>
+                            <button type="button" onclick="vibrate()" class="btn col-lg-6 mb-4">
+                                <div class="card bg-success text-white shadow">
+                                    <div class="card-body">
+                                        VIBRATE
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <button data-dismiss="modal" class="btn btn-warning btn-user btn-block">
+                            CANCEL
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/sb-admin-2.min.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+
+</html>
